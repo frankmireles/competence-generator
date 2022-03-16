@@ -1,8 +1,12 @@
+/* Descripción Generador de metas de aprendizaje
+Esta es la herramienta que se debe utilizar para generar las metas de aprendizaje correspondientes a cada SLAB.*/
+
 var verbs = [];
-const conocimiento = ['', 'Bosqueja', 'Cita', 'Cuenta', 'Copia', 'Define', 'Dibuja', 'Ejemplifica', 'Encuentra', 'Enlista', 'Enumera escoge', 'Expresa', 'Identifica', 'Ilustra', 'Indica', 'Integra', 'Menciona', 'Muestra', 'Nombra', 'Ordena', 'Organiza recita', 'Reconoce', 'Recopila', 'Recuerda registra', 'Reproduce', 'Selecciona'];
-const comprension = ['', 'Actúa', 'Aprecia', 'Analiza', 'Argumenta', 'Asocia', 'Asume', 'Clasifica', 'Compara', 'Comprende', 'Contrasta', 'Debate', 'Describe', 'Determina', 'Diferencia', 'Discute', 'Distingue', 'Esquematiza', 'Estima', 'Evalúa', 'Expone extiende', 'Ilustra', 'Informa', 'Interpreta ordena', 'Parafrasea predice', 'Reafirma', 'Relaciona', 'Resume', 'Revisa', 'Seria', 'Sustenta', 'Traduce', 'Valora'];
-const uso = ['', 'Aplica', 'Calcula', 'Configura', 'Construye', 'Convierte', 'Crea', 'Decide', 'Desarrolla', 'Detecta', 'Dirige', 'Diseña', 'Ejecuta', 'Ejerce', 'Elabora', 'Elige', 'Emplea establece', 'Examina', 'Gestiona', 'Implementa', 'Indaga', 'Integra', 'Interviene', 'Investiga', 'Maneja', 'Manipula', 'Modela', 'Opera', 'Practica', 'Produce', 'Programa', 'Propone', 'Realiza', 'Refuerza', 'Resuelve', 'Soluciona', 'Usa', 'Utiliza'];
-const transferencia = ['', 'Adiestra', 'Apoya', 'Ayuda', 'Capacita colabora comparte', 'Comunica contribuye', 'Convierte', 'Corrige', 'Demuestra', 'Descubre', 'Detalla', 'Enseña', 'Experimenta', 'Explica', 'Forma', 'Inculca', 'Instruye', 'Muestra', 'Orienta', 'Prepara', 'Provee', 'Sustenta', 'Transfiere', 'Transforma', 'Transmite', 'Traslada'];
+
+const conocimiento = ['', 'Bosquejo', 'Cito', 'Cuento', 'Copio', 'Defino', 'Dibujo', 'Ejemplifico', 'Encuentro', 'Enlisto', 'Enumero', 'Escojo', 'Expreso', 'Identifico', 'Ilustro', 'Indico', 'Integro', 'Menciono', 'Muestro', 'Nombro', 'Ordeno', 'Organizo', 'Recito', 'Reconozco', 'Recopilo', 'Recuerdo', 'Registro', 'Reproduzco', 'Selecciono'];
+const comprension = ['', 'Actúo', 'Aprecio', 'Analizo', 'Argumento', 'Asocio', 'Asumo', 'Clasifico', 'Comparo', 'Comprendo', 'Contrasto', 'Debato', 'Describo', 'Determino', 'Diferencio', 'Discuto', 'Distingo', 'Esquematizo', 'Estimo', 'Evalúo', 'Expongo', 'Extiendo', 'Ilustro', 'Informo', 'Interpreto', 'Ordeno', 'Parafraseo', 'Predigo', 'Reafirmo', 'Relaciono', 'Resumo', 'Reviso', 'Serio', 'Sustento', 'Traduzco', 'Valoro'];
+const uso = ['', 'Aplico', 'Calculo', 'Configuro', 'Construyo', 'Convierto', 'Creo', 'Decido', 'Desarrollo', 'Detecto', 'Dirijo', 'Diseño', 'Ejecuto', 'Ejerzo', 'Elaboro', 'Elijo', 'Empleo', 'Establezco', 'Examino', 'Gestiono', 'Implemento', 'Indago', 'Integro', 'Intervengo', 'Investigo', 'Manejo', 'Manipulo', 'Modelo', 'Opero', 'Practico', 'Produzco', 'Programo', 'Propongo', 'Realizo', 'Refuerzo', 'Resuelvo', 'Soluciono', 'Uso', 'Utilizo'];
+const transferencia = ['', 'Adiestro', 'Apoyo', 'Ayudo', 'Capacito', 'Colaboro', 'Comparto', 'Comunico', 'Contribuyo', 'Convierto', 'Corrijo', 'Demuestro', 'Descubro', 'Detallo', 'Enseño', 'Experimento', 'Explico', 'Formo', 'Inculco', 'Instruyo', 'Muestro', 'Oriento', 'Preparo', 'Proveo', 'Sustento', 'Transfiero', 'Transformo', 'Transmito', 'Traslado'];
 
 verbs.push(conocimiento, comprension, uso, transferencia);
 
